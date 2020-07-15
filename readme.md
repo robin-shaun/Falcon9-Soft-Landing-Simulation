@@ -20,10 +20,11 @@ https://github.com/xdedss/GFOLD_KSP
 
 ## 使用方法
 
-1. 运行runfg.bat脚本，开启FlightGear
-2. 运行init.m，初始化参数（火星登陆器参数来自论文，猎鹰9参数来自github）
-3. 运行cvx_solve.m，凸优化求解优化变量
-4. 启动falcon9.slx的simulink仿真，guidance模块中的控制器利用凸优化求解出的位置、速度与真实的位置、速度的偏差和凸优化求解的推力，综合输出推力
-5. 这里没有使用FlightGear自带的动力学模型，FlightGear只是用于可视化，动力学模型在Simulink中，是变质量的六自由度刚体模型，但输入力矩始终为0。
+1. 将falcon9文件夹复制到C:\Program Files\FlightGear 2019.1.2\data下（安装目录会有差异）
+2. 运行runfg.bat脚本，开启FlightGear
+3. 运行init.m，初始化参数（火星登陆器参数来自论文，猎鹰9参数来自github）
+4. 运行cvx_solve.m，凸优化求解优化变量
+5. 启动falcon9.slx的simulink仿真，guidance模块中的控制器利用凸优化求解出的位置、速度与真实的位置、速度的偏差和凸优化求解的推力，综合输出推力
+6. 这里没有使用FlightGear自带的动力学模型，FlightGear只是用于可视化，动力学模型在Simulink中，是变质量的六自由度刚体模型，但输入力矩始终为0。
 
 ![demo](demo.gif)
