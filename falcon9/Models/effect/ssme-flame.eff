@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+  <name>ssme-flame</name>
+  <inherits-from>Effects/thrust-flame</inherits-from>
+  <parameters>
+    <flame_radius_fraction type="float">0.133</flame_radius_fraction>
+    <flame_color_low_r>0.9</flame_color_low_r>
+    <flame_color_low_g>0.7</flame_color_low_g>
+    <flame_color_low_b>0.5</flame_color_low_b>
+    <flame_color_high_r>0.7</flame_color_high_r>
+    <flame_color_high_g>0.7</flame_color_high_g>
+    <flame_color_high_b>1.0</flame_color_high_b>
+    <base_flame_r type="float">0.8</base_flame_r>
+    <base_flame_g type="float">1.0</base_flame_g>
+    <base_flame_b type="float">1.0</base_flame_b>
+    <!--<flame_color_low_r><use>/sim/systems/various/ssme-flame-r-low</use></flame_color_low_r>
+    <flame_color_low_g><use>/sim/systems/various/ssme-flame-g-low</use></flame_color_low_g>
+    <flame_color_low_b><use>/sim/systems/various/ssme-flame-b-low</use></flame_color_low_b>
+    <flame_color_high_r><use>/sim/systems/various/ssme-flame-r-high</use></flame_color_high_r>
+    <flame_color_high_g><use>/sim/systems/various/ssme-flame-g-high</use></flame_color_high_g>
+    <flame_color_high_b><use>/sim/systems/various/ssme-flame-b-high</use></flame_color_high_b>
+    <base_flame_r type="float"><use>/sim/systems/various/ssme-flame-r-base</use></base_flame_r>
+    <base_flame_g type="float"><use>/sim/systems/various/ssme-flame-g-base</use></base_flame_g>
+    <base_flame_b type="float"><use>/sim/systems/various/ssme-flame-b-base</use></base_flame_b>-->
+    <use_shocks type="int">1</use_shocks>
+    <use_noise type="int">1</use_noise>
+    <thrust_collimation><use>/sim/systems/various/ssme-flame-collimation</use></thrust_collimation>   
+    <thrust_density><use>/sim/systems/various/ssme-flame-density</use></thrust_density>
+    <!--<thrust_density><use>test/density</use></thrust_density>-->
+    <base_flame_density type="float"><use>/sim/systems/various/ssme-flame-base-density</use></base_flame_density>
+    <shock_frequency><use>/sim/systems/various/ssme-flame-shock-frequency</use></shock_frequency>
+    <!--<noise_strength>0.3</noise_strength>-->
+    <noise_scale>0.1</noise_scale>
+    <noise_strength><use>/sim/systems/various/ssme-noise-strength</use></noise_strength>
+  </parameters>
+</PropertyList>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<!--
+************************************************************************
+ Flight Gear sounds configuration file for HL-20 simulation
+
+ Copyright 2018 The MathWorks Inc.
+************************************************************************
+-->
+
+<PropertyList>
+
+ <fx>
+    <wind>
+        <name>wind</name>
+        <type>avionics</type>
+        <mode>looped</mode>
+        <path>Aircraft/falcon9/Sounds/wind1.wav</path>
+        <property>velocities/airspeed-kt</property>
+        <volume>
+            <property>position/altitude-ft</property>
+            <factor>-0.000015</factor>
+            <offset>1.0</offset>
+            <min>0.01</min>
+            <max>0.5</max>
+        </volume>
+        <volume>
+            <property>velocities/airspeed-kt</property>
+            <factor>0.00015</factor>
+            <min>0.01</min>
+            <max>0.25</max>
+        </volume>
+        <pitch>
+            <property>velocities/airspeed-kt</property>
+            <factor>0.01</factor>
+            <offset>1.0</offset>
+        </pitch>
+        <position>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <max-dist>2</max-dist>
+        <reference-dist>1</reference-dist>
+    </wind>
+ </fx>
+
+</PropertyList>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <description>Falcon-9</description>
+
+  <flight-model>network</flight-model>
+
+  <model>
+    <path>Aircraft/falcon9/Models/falcon9.xml</path>
+  </model>
+  <sound>
+    <path>Aircraft/falcon9/Sounds/falcon9-sound.xml</path>
+  </sound>
+  <systems>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+  </systems> 
+  <path>Aircraft/Generic/Effects/Thruster/thrust_flame.ac</path>
+    <nopreview/>
+    <animation>
+        <type>scale</type>
+        <property alias="/params/augmentation-alight"/>
+        <x-min>0.2</x-min>
+        <y-min>0.3</y-min>
+        <z-min>0.3</z-min>
+        <y-max>1</y-max>
+        <z-max>1</z-max>
+        <x-factor>0.472</x-factor>
+        <y-factor>0.6</y-factor>
+        <z-factor>0.6</z-factor>
+    </animation>
+    <!-- on the F-15 we have a property available that controls the ignition of the afterburner. If you do not wish to implement this
+         remove the following animation tag -->
+    <animation>
+        <type>select</type>
+        <object-name>Bounding_box</object-name>
+        <condition>
+            <greater-than>
+                <property alias="/params/augmentation-ignition"/>
+                <value>0.8</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <effect>
+        <inherits-from>Aircraft/MyAircraft/Models/Effects/my-flame</inherits-from>
+        <object-name>Bounding_box</object-name>
+    </effect>
+  <effect>
+		<inherits-from>Aircraft/SpaceShuttle/Models/Effects/ssme-flame</inherits-from>
+	  <object-name>Bounding_box</object-name>
+	</effect>
+ <!-- The following piece of code sets the default view as the chase view -->
+  <current-view>
+    <view-number type="int">2</view-number>
+  </current-view>
+
+ </sim>
+
+</PropertyList>
