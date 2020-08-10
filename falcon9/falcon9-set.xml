@@ -44,15 +44,7 @@
             </greater-than>
         </condition>
     </animation>
-
-    <effect>
-        <inherits-from>Aircraft/MyAircraft/Models/Effects/my-flame</inherits-from>
-        <object-name>Bounding_box</object-name>
-    </effect>
-  <effect>
-		<inherits-from>Aircraft/SpaceShuttle/Models/Effects/ssme-flame</inherits-from>
-	  <object-name>Bounding_box</object-name>
-	</effect>
+    
  <!-- The following piece of code sets the default view as the chase view -->
   <current-view>
     <view-number type="int">2</view-number>

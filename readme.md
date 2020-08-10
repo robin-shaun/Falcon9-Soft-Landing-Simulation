@@ -20,7 +20,7 @@ https://github.com/xdedss/GFOLD_KSP
 
 ## 使用方法
 
-1. 将falcon9文件夹复制到C:\Program Files\FlightGear 2019.1.2\data下（安装目录会有差异）
+1. 将falcon9文件夹复制到C:\Program Files\FlightGear 2019.1.2\data\Aircraft下（安装目录会有差异）
 2. 运行runfg.bat脚本，开启FlightGear。开启后按v切换视图模式，按tab切换鼠标的作用
 3. 运行init.m，初始化参数（火星登陆器参数来自论文，猎鹰9参数来自github）
 4. 运行cvx_solve.m，凸优化求解优化变量
